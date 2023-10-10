@@ -1,0 +1,8 @@
+>>> Disco.objects.all()
+<QuerySet [<Disco: Meteora>, <Disco: 1>, <Disco: Toxicity>, <Disco: Trench>, <Disco: Blurryface>, <Disco: Night Visions>, <Disco: Origins>]>
+>>> Artista.objects.filter(discos__nome="1")
+<QuerySet [<Artista: John Lenon>, <Artista: Paul McCartney>]>
+>>> Artista.objects.filter(discos__selo_fonografico__texto="Sony Music")
+<QuerySet [<Artista: Dan Raynolds>, <Artista: Tyler>, <Artista: Tyler>, <Artista: Josh>]>
+>>> 
+
